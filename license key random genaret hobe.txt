@@ -1,0 +1,1716 @@
+
+
+Update the README.md file and redesign the website with a premium, modern, and dynamic look. Change the website name to "RinoxAuth".
+
+In the README.md, include everything in detail:
+
+Full project overview
+Features and functionality
+Installation and setup guide
+Backend and API setup
+Environment configuration
+Step-by-step hosting/deployment guide
+
+Also improve the website UI/UX:
+
+Add a premium theme
+Include particle effects for a dynamic background
+Ensure smooth scrolling
+Add clean animations and transitions
+Make the overall experience modern, responsive, and visually appealing
+
+
+
+
+
+
+
+
+
+
+Complete UI/UX Design for CloudAuth Licensing Platform
+
+## 1. HOMEPAGE / LANDING PAGE DESIGN
+
+### Hero Section
+- Modern gradient background (dark theme: deep navy to purple)
+- Animated logo/branding: "CloudAuth" with glowing effect
+- Tagline: "Secure Your Software. Manage Licenses. Grow Revenue."
+- Subtext: "Production-ready licensing platform with multi-language SDK support, hardware-locked keys, and reseller management."
+- Two CTA buttons:
+  - [Get Started Free] → Signup page
+  - [View Demo] → Interactive demo
+- Floating dashboard preview screenshot with subtle animation
+- Trust badges: "256-bit Encryption", "99.9% Uptime", "10+ SDK Languages"
+
+### Features Section (Grid Layout)
+| Feature Icon | Title | Description |
+|-------------|-------|-------------|
+| 🔐 HWID Locking | Hardware-Bound Security | Lock licenses to specific devices. Prevent unauthorized sharing. |
+| 🌐 Multi-Language SDK | Works Everywhere | C++, C#, Python, JavaScript, PHP, Java, Go, Rust, Ruby & more. |
+| 🎨 Customizable UI | Your Brand, Your Rules | White-label client portal with your logo, colors, and domain. |
+| 🤝 Reseller System | Scale Your Business | Create reseller accounts with credit limits and commission tracking. |
+| 📊 Analytics | Data-Driven Decisions | Real-time dashboards with user growth, license usage, and revenue. |
+| 🔑 Auto Key Generation | Set & Forget | Generate bulk license keys with custom plans, expiry, and device limits. |
+| ⚡ API First | Integrate in Minutes | RESTful API with rate limiting, webhooks, and detailed documentation. |
+| 🛡️ Security First | Enterprise Grade | OAuth login, 2FA, IP whitelisting, activity logs, session management. |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## main dashboard
+
+I need a professional, premium-looking dark theme UI for my 
+CloudAuth licensing platform dashboard.
+
+## Color Theme (Dark Premium Look)
+
+Background:      #0F172A (Deep Navy/Slate-900)
+Sidebar:          #0B1120 (Darker Navy)
+Card Background:  #1E293B (Slate-800)
+Border Color:     #334155 (Slate-700)
+
+Primary/Accent:  #6366F1 (Indigo-500) - for buttons, active links
+Success:          #10B981 (Emerald-500) - for active/valid status
+Warning:          #F59E0B (Amber-500) - for expiring soon
+Danger:           #EF4444 (Red-500) - for expired/revoked
+Info:             #3B82F6 (Blue-500) - for informational
+
+Text Primary:     #F1F5F9 (Slate-100)
+Text Secondary:   #94A3B8 (Slate-400)
+Text Muted:       #64748B (Slate-500)
+
+## Typography
+Font: Inter (sans-serif) for body
+Font: JetBrains Mono (monospace) for license keys, API keys, code
+Headings: Bold, tracking-tight
+Numbers: Tabular-nums for stats cards
+
+## Overall Vibe
+- Dark, sleek, professional (like Stripe/Vercel dashboard)
+- Glassmorphism cards with subtle backdrop-blur
+- Subtle gradient accents on hover
+- Smooth micro-animations (200-300ms transitions)
+- Rounded corners (rounded-xl: 12px)
+- Soft shadows (shadow-lg with low opacity)
+- Glowing effects on primary buttons and active states
+
+## Key Visual Elements
+1. Sidebar: Darker than main bg, with icon+text navigation
+2. Cards: Dark surface color with 1px subtle border
+3. Buttons: Solid primary color, slight glow on hover
+4. Badges: Colored dots + text (green=active, red=expired)
+5. Stats: Large numbers with trend arrows (↑↓)
+6. Tables: Clean rows with hover highlight, no vertical borders
+7. Modals: Centered with backdrop blur dark overlay
+8. Inputs: Dark bg with light border, glowing focus ring
+9. Charts: Dark themed with matching accent colors
+
+## Inspiration References
+- Vercel Dashboard
+- Stripe Dashboard  
+- Linear App
+- shadcn/ui dark theme
+- Tailwind UI dark components
+
+Make everything look like a premium SaaS product, 
+not a basic admin panel.
+
+
+
+
+
+
+
+
+I need the following features for my licensing platform:
+
+1. **License Key Generation:**
+   - License keys should be randomly generated automatically
+   - Format should be structured and secure
+
+2. **SDK Folder Updates:**
+   - Update all the SDK files so everything works properly
+   - Make sure SDKs work for all programming languages:
+     - C++
+     - C#
+     - Python
+     - And as many other programming languages as possible
+   - All SDK implementations should function correctly for license validation
+
+
+Current Issues to Fix
+1. License Key Table - Redesign Completely
+Your current columns (ID, License Key, User, Type, Expires, Status, Actions) are too basic. Make it:
+
+text
+| ID | License Key | Plan | Issued To | Device Limit | Issued Date | Expiry | Status | Actions |
+|----|-------------|------|-----------|--------------|--------------|--------|--------|---------|
+| 1  | A3F7-...    | Pro  | user@mail | 3 Devices    | 24 Apr 2026  | Never  | Active | •••     |
+2. Add These Professional Features
+Plan Types (instead of just "Lifetime"):
+
+Starter - 1 device, basic features
+
+Professional - 3 devices, all features
+
+Enterprise - Unlimited devices, priority support
+
+Trial - 7/14/30 days evaluation
+
+Status Types (with color badges):
+
+🟢 Active - Working fine
+
+🟡 Expiring Soon - 7 days left
+
+🔴 Expired - Not valid
+
+⚫ Revoked - Blocked manually
+
+🔵 Suspended - Payment issue
+
+3. Add License Details Modal
+When clicking a license, show:
+
+Hardware ID / Device fingerprint
+
+IP History log
+
+Activation date
+
+Last check-in time
+
+Grace period status (if any)
+
+4. Better "Generate License" Form
+text
+┌─ Generate New License ─────────────┐
+│                                    │
+│  Select Plan:  [Dropdown ▼]       │
+│  User Email:   [_optional____________]    │
+│  Device Limit: [___]              │
+│  Duration:     ○ Lifetime         │
+│                ○ Custom [30] Days │
+│  Features:     ☑ API Access       │
+│                ☑ Updates          │
+│                ☐ Support          │
+│                                    │
+│  [Generate License Key]           │
+└────────────────────────────────────┘
+5. Add These Sections for Authority Look
+Bulk Generate - Upload CSV for multiple keys
+
+Export Keys - Download as CSV/PDF
+
+Revoke Selected - Bulk action button
+
+Search & Filter - By status, plan, date range
+
+Pagination - Show 20/50/100 per page
+
+
+
+
+
+
+
+
+
+
+
+
+1. User Table Columns Redesign
+Current (too basic):
+
+text
+ID | Username | Email | Plan | HWID | Expires | Status | Actions
+Professional version:
+
+text
+| ID | User | Plan | License Key | Devices | Joined | Expires | Last Login | Status | Actions |
+|----|------|------|-------------|---------|--------|---------|------------|--------|---------|
+| 9  | a    | FREE | A3F7-K9L2  | 0/1     | 24 Apr | 23 May  | Never      | Active | •••     |
+2. User Details Expand/Collapse
+Row click korle niche expand hobe:
+
+text
+▾ User: a (ID: 9)
+  ├─ Registered: 24 Apr 2026
+  ├─ IP Address: 103.xxx.xxx.xxx
+  ├─ HWID Status: Not Locked Yet
+  ├─ Active Sessions: 0
+  ├─ Total Logins: 5
+  └─ Actions: [Reset HWID] [Change Plan] [Ban User] [Login as User]
+3. Better "Create User" Form
+text
+┌─ Create New User ───────────────────┐
+│                                     │
+│  Username:    [_______________]    │
+│  Email:       [__optional_____________]    │
+│  Password:    [_______________]    │
+│               ☐ Auto-generate      │
+│                                     │
+│  ── License Details ──             │
+│  Plan:        [Dropdown ▼]         │
+│  Duration:    [30] Days            │
+│  Device Limit:[1]                  │
+│  License Key: ○ Create New         │
+│               ○ Assign Existing ▼  │
+│                                     │
+│  ── Security ──                    │
+│  ☑ HWID Lock (auto-lock on login) │
+│  ☐ IP Restriction                 │
+│  ☐ 2FA Required                   │
+│                                     │
+│  [Create User]  [Create + Email]  │
+└─────────────────────────────────────┘
+4. Bulk Actions Bar
+Select korle upore show hobe:
+
+text
+☐ 3 Users Selected   [Change Plan ▼] [Extend Expiry] [Ban] [Delete] [Export]
+5. Filter System Add Korun
+text
+[Search users...]  [Plan: All ▼]  [Status: All ▼]  [Date Range: 📅]
+6. Status Badges with Colors
+text
+🟢 Active        → Green badge
+🟡 Expiring Soon → Yellow badge (7 days left)
+🔴 Expired       → Red badge
+⚫ Banned        → Dark badge
+🔵 Unverified    → Blue badge
+⚪ Inactive      → Gray badge (30+ days no login)
+7. Stats Cards at Top
+text
+┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+│ 1,892    │ │ 156      │ │ 23       │ │ 67%      │
+│ Total    │ │ Active   │ │ Banned   │ │ Retention│
+│ Users    │ │ Today    │ │ Users    │ │ Rate     │
+└──────────┘ └──────────┘ └──────────┘ └──────────┘
+8. Actions Menu (3-dot dropdown)
+Per user row er last e just "Reset HWID | Delete" na rekhe:
+
+text
+     ⋮
+┌─────────────┐
+│ 📋 Copy ID   │
+│ 🔑 Reset HWID│
+│ 🔄 Change Plan│
+│ ⏳ Extend    │
+│ 📧 Email User│
+│ 🚫 Ban User  │
+│ 🗑 Delete    │
+└─────────────┘
+TL;DR Priority Fix List:
+Priority	Feature	Impact
+🔴 High	User profile expand	Professional look
+🔴 High	Better create form	Functionality
+🟡 Medium	Stats cards	Dashboard feel
+🟡 Medium	Filters + Search	Usability
+🟢 Low	Bulk actions	Advanced feature
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎯 Recommended Dashboard Layout
+text
+┌─────────────────────────────────────────────────────────────┐
+│  Dashboard                            [Date Range: 30d ▼]  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐      │
+│  │ 💰       │ │ 👥       │ │ 🔑       │ │ ✅       │      │
+│  │ Revenue  │ │ Users    │ │ Licenses │ │ Success  │      │
+│  │ $0       │ │ 1        │ │ 0 Active │ │ 100%     │      │
+│  │ ↑0%      │ │ ↑100%    │ │ ↓0%      │ │ No fail  │      │
+│  └──────────┘ └──────────┘ └──────────┘ └──────────┘      │
+│                                                             │
+│  ┌──────────────────────┐ ┌──────────────────────┐         │
+│  │ 📊 Revenue Overview  │ │ 📈 License Usage    │         │
+│  │   (Chart: Bar/Line) │ │   (Chart: Pie/Bar)  │         │
+│  │                      │ │                      │         │
+│  │   No data yet        │ │   Free: 1            │         │
+│  │                      │ │   Pro: 0             │         │
+│  │                      │ │   Enterprise: 0      │         │
+│  └──────────────────────┘ └──────────────────────┘         │
+│                                                             │
+│  ┌─────────────────────────────────────────────┐           │
+│  │ 📋 Recent Activity              [View All]  │           │
+│  │                                             │           │
+│  │ 🟢 User "a" logged in          2 min ago   │           │
+│  │ 🔑 License A3F7-xxx created   1 hour ago   │           │
+│  │ 👤 New user registered        3 hours ago  │           │
+│  │ ⚙️ Settings updated           Yesterday    │           │
+│  │                                             │           │
+│  └─────────────────────────────────────────────┘           │
+│                                                             │
+│  ┌──────────────────┐ ┌──────────────────┐                 │
+│  │ ⚡ Quick Actions │ │ 🔔 Alerts       │                 │
+│  │                  │ │                  │                 │
+│  │ 📱 Create App    │ │ ⚠️ 0 Expiring   │                 │
+│  │ 🔑 New License   │ │    soon         │                 │
+│  │ 👤 Add User      │ │                  │                 │
+│  │ 📊 View Reports  │ │ ✅ All systems   │                 │
+│  │ ⚙️ Settings      │ │    operational   │                 │
+│  └──────────────────┘ └──────────────────┘                 │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+Stats Cards Details
+Apnar current 4-ta card ke upgrade korun:
+
+Current	Professional Version
+Total Requests: 12	12 Requests · 📈 +8 this week · Avg 2/day
+Total Users: 1	1 User · 🟢 Active now · 0 pending invites
+Active Licenses: 0	0 Active · ⚠️ Need attention · [Create one →]
+API Key shown	API Status: 🟢 Live · 100% uptime · Last called: 2h ago
+Add These Charts (Even Simple Ones)
+1. Requests Over Time (Mini Line Chart)
+
+text
+     │    ╭─╮
+  10 │   ╭╯ ╰╮
+   5 │  ╭╯   ╰───
+   0 │──╯
+     └──┬──┬──┬──┬──
+       Mon Tue Wed Thu Fri
+2. License Distribution (Mini Donut/Pie)
+
+text
+      ╭──────────╮
+     ╱   Free 100% ╲
+    │   Pro 0%      │
+    │   Ent 0%      │
+     ╲             ╱
+      ╰──────────╯
+Quick Actions - Make Them Cards, Not Just Links
+text
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│  📱         │ │  🔑         │ │  👤         │ │  📊         │
+│ Create App  │ │ Generate    │ │ Add New     │ │ View        │
+│             │ │ License     │ │ User        │ │ Analytics   │
+│ Set up new  │ │ Create keys │ │ Invite team │ │ Check stats │
+│ application │ │ for users   │ │ members     │ │ & growth    │
+│ [Create →]  │ │ [Generate →]│ │ [Add →]     │ │ [View →]    │
+└─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
+System Health Widget
+text
+┌─ System Status ─────────────────────┐
+│                                     │
+│  API:        🟢 Operational        │
+│  Database:   🟢 Connected          │
+│  License Svr:🟢 Running            │
+│  Queue:      🟢 0 pending          │
+│                                     │
+│  Last checked: 2 seconds ago       │
+└─────────────────────────────────────┘
+Empty State Design
+Jokhon kono data nai (like apnar 0 active licenses), blank na rekhe:
+
+text
+┌─────────────────────────────────────┐
+│          🔑                          │
+│     No Licenses Yet                  │
+│                                     │
+│  Create your first license key      │
+│  to get started with authentication │
+│                                     │
+│     [Generate First License]        │
+└─────────────────────────────────────┘
+Priority Implementation
+Step	What to Add	Why
+1	Redesign 4 stat cards with trends	Instant premium feel
+2	Add mini charts (use Chart.js)	Looks professional
+3	Proper activity timeline	Shows system is alive
+4	Quick action cards with descriptions	Better UX
+5	System health indicator	Builds trust
+
+
+
+
+
+
+
+
+
+
+1. Applications Table Redesign
+Current (basic):
+
+text
+Name | OwnerID | Version | Users | Status | Actions
+Professional Version:
+
+text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  Applications                                            [+ Create New App]  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌──────────────────────────────────────┐  ┌──────────────────────────────┐  │
+│  │ 🔐 atik                  🟢 Active  │  │ 🔐 New App                   │  │
+│  │ v1.0.0 · Created: 24 Apr             │  │                              │  │
+│  │                                      │  │ Set up a new application     │  │
+│  │ App Key: e0b4e0...c16c1    📋 Copy  │  │ to start authenticating      │  │
+│  │ Secret:  24743e...d8e6    👁️ Show   │  │ users.                      │  │
+│  │                                      │  │                              │  │
+│  │ 👤 0 Users   🔑 0 Licenses          │  │ [+ Create Application]       │  │
+│  │ 🔗 Portal: http://127.0.0.1:8000    │  │                              │  │
+│  │                                      │  └──────────────────────────────┘  │
+│  │ [View] [Edit] [Delete] [••• More]   │                                     │
+│  └──────────────────────────────────────┘                                     │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+2. Application Cards Instead of Table (Better UX)
+text
+┌──────────────────────┐  ┌──────────────────────┐  ┌──────────────────────┐
+│                      │  │                      │  │  + Create New        │
+│  🔐 atik             │  │  🛡️ My SaaS App     │  │                      │
+│  ──────────────────  │  │  ──────────────────  │  │  Deploy a new        │
+│  Version: 1.0.0      │  │  Version: 2.1.0      │  │  application         │
+│  Status: 🟢 Active   │  │  Status: 🟢 Active   │  │                      │
+│  Users: 0            │  │  Users: 156          │  │  Get started with    │
+│  Licenses: 0         │  │  Licenses: 189       │  │  authentication      │
+│  Created: 24 Apr     │  │  Created: 15 Mar     │  │                      │
+│                      │  │                      │  │  [Create App]        │
+│  [Manage →]          │  │  [Manage →]          │  │                      │
+└──────────────────────┘  └──────────────────────┘  └──────────────────────┘
+3. Create Application Form - Premium
+text
+┌─ Create New Application ──────────────────────────┐
+│                                                   │
+│   Application Name                               │
+│   ┌─────────────────────────────────────────┐    │
+│   │ My Awesome SaaS App                     │    │
+│   └─────────────────────────────────────────┘    │
+│   This will be shown to your users               │
+│                                                   │
+│   ── Configuration ──                            │
+│                                                   │
+│   Version:          [1.0.0          ]            │
+│   Owner ID:         [_______________] (optional)  │
+│                                                   │
+│   ── Security Settings ──                        │
+│                                                   │
+│   ☑ Auto-generate App Key & Secret               │
+│   ☑ Enable HWID locking                          │
+│   ☐ IP Whitelist (Advanced)                      │
+│   ☐ Require 2FA for admin access                 │
+│                                                   │
+│   ── Features ──                                 │
+│                                                   │
+│   ☑ User Management Portal                       │
+│   ☑ License Key Reset (by user)                  │
+│   ☑ API Access                                   │
+│   ☐ Webhooks                                     │
+│                                                   │
+│   ┌─────────────────────────────────────────┐    │
+│   │          [Create Application]           │    │
+│   └─────────────────────────────────────────┘    │
+│                                                   │
+└───────────────────────────────────────────────────┘
+4. Credentials Modal/Section - Security Focused
+Apnar ei plain text credentials show korata risky. Make it secure:
+
+text
+┌─ Application Credentials: atik ─────────────────────┐
+│                                                     │
+│  ⚠️ Security Notice                                 │
+│  Never share your App Secret. Treat it like a       │
+│  password. Rotate regularly for security.           │
+│                                                     │
+│  ── App Key (Public) ──                             │
+│  ┌─────────────────────────────────────────┐       │
+│  │ e0b4e0181faca218...3cf16c1              │ 📋    │
+│  └─────────────────────────────────────────┘       │
+│  ✅ Safe to use in client-side code                │
+│                                                     │
+│  ── App Secret (Private) ──                         │
+│  ┌─────────────────────────────────────────┐       │
+│  │ ••••••••••••••••••••••••••••••••••••••• │ 👁️    │
+│  └─────────────────────────────────────────┘       │
+│  🔒 Keep this secret on your server only           │
+│                                                     │
+│  ── Actions ──                                      │
+│  [Regenerate Secret] [Download .env] [Rotation Log]│
+│                                                     │
+│  Last rotated: 24 Apr 2026                         │
+│  Secret strength: 🟢 Strong (256-bit)              │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+5. Client Portal Card (Better)
+text
+┌─ Client Portal ─────────────────────────────────────┐
+│                                                     │
+│  🌐 Share with your clients:                        │
+│                                                     │
+│  ┌─────────────────────────────────────────┐       │
+│  │ http://127.0.0.1:8000                   │ 📋    │
+│  └─────────────────────────────────────────┘       │
+│                                                     │
+│  Features:                                          │
+│  • Users can manage their own licenses              │
+│  • Reset HWID without admin help                    │
+│  • View license expiry & status                    │
+│                                                     │
+│  ── Customization ──                                │
+│  ☑ Show your branding                              │
+│  ☑ Custom Domain (Pro feature)                     │
+│                                                     │
+│  [Preview Portal] [Customize]                       │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+6. Application Stats (Inside Each App)
+App card/row e click korle expand hobe:
+
+text
+┌─ atik - Detailed View ─────────────────────────────┐
+│                                                     │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐           │
+│  │ 👤 0     │ │ 🔑 0     │ │ 📊 0     │           │
+│  │ Users    │ │ Licenses │ │ Requests │           │
+│  └──────────┘ └──────────┘ └──────────┘           │
+│                                                     │
+│  ┌─────────────────────────────────────────┐       │
+│  │ API Usage (Last 30 Days)                │       │
+│  │ 📈 [Mini Chart]                         │       │
+│  │ Total: 0 requests · Avg: 0/day         │       │
+│  └─────────────────────────────────────────┘       │
+│                                                     │
+│  Latest Errors: None                               │
+│  Webhook Status: Not configured                    │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+7. Quick Setup Checklist (For New Apps)
+Jokhon app create hoy, show:
+
+text
+┌─ Setup Checklist: atik ────────────────────────────┐
+│                                                     │
+│  ✅ 1. Application Created                          │
+│  ✅ 2. Credentials Generated                        │
+│  ⬜ 3. Install SDK in your app                      │
+│     [Copy Install Command]                          │
+│  ⬜ 4. Create your first license                    │
+│     [Go to License Keys →]                          │
+│  ⬜ 5. Test authentication flow                     │
+│     [View Documentation →]                          │
+│                                                     │
+│  🎉 0/5 completed                                   │
+│  ┌─────────────────────────────────────────┐       │
+│  │ ░░░░░░░░░░░░░░░░░░░░░░ 0%              │       │
+│  └─────────────────────────────────────────┘       │
+│                                                     │
+
+
+
+🎯 Full Analytics Page Layout
+text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  Analytics                                              [Export ▼] [30 Days ▼]│
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐ │
+│  │ 👤         │ │ 🔑         │ │ ⏰         │ │ 📊         │ │ 💰         │ │
+│  │ Total      │ │ Active     │ │ Expired    │ │ Login      │ │ Revenue    │ │
+│  │ Users      │ │ Licenses   │ │ Licenses   │ │ Today      │ │ (Est.)     │ │
+│  │            │ │            │ │            │ │            │ │            │ │
+│  │ 1          │ │ 0          │ │ 0          │ │ 2          │ │ $0         │ │
+│  │ ↑ 100%     │ │ → 0%       │ │ → 0%       │ │ ↓ 33%      │ │ → 0%       │ │
+│  └────────────┘ └────────────┘ └────────────┘ └────────────┘ └────────────┘ │
+│                                                                              │
+│  ┌──────────────────────────────┐ ┌──────────────────────────────┐          │
+│  │ 📈 User Growth               │ │ 📊 License Distribution      │          │
+│  │                              │ │                              │          │
+│  │  2┤                    •     │ │  Free:    ████████░░ 1 (100%)│          │
+│  │  1┤         •               │ │  Pro:     ░░░░░░░░░░ 0 (0%)  │          │
+│  │  0┼─────┬─────┬─────        │ │  Ent:     ░░░░░░░░░░ 0 (0%)  │          │
+│  │    Apr   Apr   May           │ │                              │          │
+│  │    23    24                   │ │  Total Licenses: 1          │          │
+│  └──────────────────────────────┘ └──────────────────────────────┘          │
+│                                                                              │
+│  ┌──────────────────────────────┐ ┌──────────────────────────────┐          │
+│  │ 📈 Login Activity (24h)      │ │ 🌍 Top Countries             │          │
+│  │                              │ │                              │          │
+│  │  3┤   ╭─╮                   │ │  🇧🇩 Bangladesh    100%      │          │
+│  │  2┤   │ ╰─╮                 │ │  🌍 Others         0%        │          │
+│  │  1┤ ╭─╯   ╰─╮              │ │                              │          │
+│  │  0┼─╯       ╰──             │ │                              │          │
+│  │   0h  6h  12h  18h  24h      │ │                              │          │
+│  └──────────────────────────────┘ └──────────────────────────────┘          │
+│                                                                              │
+│  ┌──────────────────────────────┐ ┌──────────────────────────────┐          │
+│  │ 📋 Recent Events             │ │ 🎯 Conversion Rate           │          │
+│  │                              │ │                              │          │
+│  │ 🟢 Login: user "a"  2h ago  │ │          ╭──────╮           │          │
+│  │ 👤 Register: new    3h ago  │ │ Visitors │ 2    │           │          │
+│  │ 🔑 License created  5h ago  │ │ Signups  │ 1    │ 50%       │          │
+│  │ ⚙️ Settings update  8h ago  │ │ Active   │ 1    │ 100%      │          │
+│  │                              │ │          ╰──────╯           │          │
+│  │ [View All Activity →]       │ │                              │          │
+│  └──────────────────────────────┘ └──────────────────────────────┘          │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+📊 Add These Charts
+1. User Growth Chart (Line/Area)
+text
+     │                
+  10 │              ╱
+   5 │          ╱──╱
+   1 │      ╱──╱
+   0 └──╱──┴──┴──┴──
+      Apr  Apr  Apr  May
+       22   23   24
+Group by: Daily | Weekly | Monthly
+
+2. License Usage (Doughnut/Pie)
+text
+        ╭──────────╮
+       ╱  Free 100%  ╲
+      │   Pro 0%      │
+      │   Ent 0%      │
+       ╲   1 total   ╱
+        ╰──────────╯
+3. Login Heatmap (By Hour)
+text
+     Sun  Mon  Tue  Wed  Thu  Fri  Sat
+0h   ░░░  ░░░  ░░░  ░░░  ░░░  ░░░  ░░░
+6h   ░░░  ░░░  ░░░  ░░░  ░░░  ░░░  ░░░
+12h  ░░░  ░░░  ░░░  ██░  ░░░  ░░░  ░░░
+18h  ███  ░░░  ░░░  ░░░  ░░░  ░░░  ░░░
+███ = High activity, ░░░ = No activity
+
+4. Failed vs Successful Logins
+text
+  Success ████████████████████ 100%
+  Failed  ░░░░░░░░░░░░░░░░░░░░ 0%
+🎛️ Filters & Controls
+text
+┌─ Filter Bar ───────────────────────────────────────────────────┐
+│                                                                 │
+│  [Date Range: Last 30 Days ▼]  [App: All Apps ▼]               │
+│  [Plan: All ▼]  [Country: All ▼]                               │
+│                                                                 │
+│  [Export CSV]  [Export PDF]  [Schedule Report 📧]              │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+📧 Weekly Report Email Widget
+text
+┌─ Report Settings ──────────────────────────────────┐
+│                                                    │
+│  📧 Weekly Analytics Report                       │
+│                                                    │
+│  ☑ Send every Monday at 9:00 AM                   │
+│  Email to: [________________]                     │
+│                                                    │
+│  Include:                                          │
+│  ☑ User growth    ☑ License stats                 │
+│  ☑ Revenue        ☑ Login activity                │
+│                                                    │
+│  [Save Preferences]  [Send Test Report]            │
+│                                                    │
+└────────────────────────────────────────────────────┘
+⚠️ No Data State (Empty Charts)
+Jokhon data nai, placeholder use korun:
+
+text
+┌──────────────────────────────────────────┐
+│                                          │
+│              📊                          │
+│         No Analytics Yet                 │
+│                                          │
+│    Start creating licenses and users     │
+│    to see your analytics dashboard       │
+│    come to life with insights.           │
+│                                          │
+│    [Create First License →]              │
+│                                          │
+└──────────────────────────────────────────┘
+🎨 Visual Enhancement Tips
+Element	Suggestion
+Cards	Gradient background with subtle shadow
+Charts	Use Chart.js or ApexCharts (free)
+Icons	Lucide icons or Heroicons
+Colors	Green=success, Red=failed, Blue=growth, Yellow=warning
+Animations	Subtle count-up animation on numbers
+Tooltips	Show exact values on hover
+🚀 Priority Implementation
+Step	Feature	Difficulty	Impact
+🔴 1	5 stats cards with percentage change	Easy	High
+🟡 2	User growth line chart	Medium	High
+🟡 3	License distribution pie/donut	Easy	Medium
+🟡 4	Login activity bar chart	Easy	Medium
+🟢 5	Event log timeline	Easy	Low
+🟢 6	Export & filters	Medium	Low
+
+
+
+
+
+
+
+
+
+🎯 Full Reseller Dashboard Layout
+text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  Resellers Management                                   [+ Add New Reseller]  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐        │
+│  │ 👥           │ │ 💰           │ │ 🔑           │ │ 📊           │        │
+│  │ Total        │ │ Total        │ │ Licenses     │ │ Commission   │        │
+│  │ Resellers    │ │ Credits Used │ │ Sold         │ │ Pending      │        │
+│  │              │ │              │ │              │ │              │        │
+│  │ 1            │ │ 0/100        │ │ 0            │ │ $0           │        │
+│  │ ↑ New this   │ │ 0% utilized  │ │ This month   │ │ Unpaid       │        │
+│  │ month: 1     │ │              │ │              │ │              │        │
+│  └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘        │
+│                                                                              │
+│  ┌─ Resellers Table ──────────────────────────────────────────────────────┐  │
+│  │                                                                         │  │
+│  │  [🔍 Search...]  [Status: All ▼]  [Sort: Newest ▼]  [Export CSV]      │  │
+│  │                                                                         │  │
+│  │  ┌──────────────────────────────────────────────────────────────────┐   │  │
+│  │  │ Reseller       │ Credits  │ Users │ Sold  │ Revenue │ Status │   │   │  │
+│  │  ├────────────────┼──────────┼───────┼───────┼─────────┼────────┤   │   │  │
+│  │  │ partner-alpha  │ 100      │ 0     │ 0     │ $0      │ 🟢     │   │   │  │
+│  │  │ 📧 partner@... │ 0% used  │       │       │         │ Active │   │   │  │
+│  │  │ 📅 Since: Apr  │          │       │       │         │        │   │   │  │
+│  │  │                │          │       │       │         │  ⋮     │   │   │  │
+│  │  └────────────────┴──────────┴───────┴───────┴─────────┴────────┘   │   │  │
+│  │                                                                         │  │
+│  │  Showing 1 of 1 resellers                                              │  │
+│  │  [◀] Page 1 of 1 [▶]                                                   │  │
+│  │                                                                         │  │
+│  └─────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+│  ┌─ Reseller Performance ─────────────────────────────────────────────────┐  │
+│  │                                                                         │  │
+│  │  Top Resellers by Sales (This Month)                                    │  │
+│  │                                                                         │  │
+│  │  🥇 partner-alpha    0 licenses    $0 revenue    0 customers           │  │
+│  │  ────────────────────────────────────────────────────                  │  │
+│  │  🥈 No data yet                                                        │  │
+│  │  🥉 No data yet                                                        │  │
+│  │                                                                         │  │
+│  └─────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+📝 Add Reseller Form - Premium
+text
+┌─ Add New Reseller ────────────────────────────────────────┐
+│                                                           │
+│  ── Account Details ──                                   │
+│                                                           │
+│  Username:        [partner-alpha______________]          │
+│  Email:           [partner@example.com_________]          │
+│  Password:        [________________]  🎲 Generate        │
+│                                                           │
+│  ── Credit & Commission Setup ──                         │
+│                                                           │
+│  Initial Credits: [100______]  licenses                  │
+│  Commission Rate: [20]%  per sale                        │
+│                                                           │
+│  ── Permissions ──                                       │
+│                                                           │
+│  ☑ Can create users                                      │
+│  ☑ Can manage licenses                                   │
+│  ☑ Can view analytics                                    │
+│  ☐ Can create sub-resellers                              │
+│  ☐ Can set custom pricing                                │
+│                                                           │
+│  ── Limits (Optional) ──                                 │
+│                                                           │
+│  Max Users:        [Unlimited_____]                      │
+│  License Validity: [Lifetime______]                      │
+│  Allowed Plans:    [All Plans_____]                      │
+│                                                           │
+│  ┌─────────────────────────────────────────────────┐    │
+│  │              [Add Reseller]                      │    │
+│  └─────────────────────────────────────────────────┘    │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
+👤 Reseller Details (Click to Expand)
+Row click korle expand hobe:
+
+text
+┌─ partner-alpha - Details ──────────────────────────────────────────────┐
+│                                                                         │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐  │
+│  │ 💳 100       │ │ 🔑 0         │ │ 👤 0         │ │ 💰 $0        │  │
+│  │ Credits Left │ │ Licenses     │ │ Users        │ │ Revenue      │  │
+│  │              │ │ Created      │ │ Managed      │ │ Generated    │  │
+│  └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘  │
+│                                                                         │
+│  ── Recent Activity ──                                                 │
+│  📅 Joined: 24 Apr 2026                                                │
+│  🔑 Last license created: Never                                        │
+│  👤 Last user added: Never                                             │
+│  📧 Last login: Never                                                  │
+│                                                                         │
+│  ── Actions ──                                                         │
+│  [Add Credits] [Change Commission] [View Users] [Suspend] [Delete]     │
+│                                                                         │
+│  ── Commission History ──                                              │
+│  ┌────────────────────────────────────────────────────────────┐       │
+│  │ Date       │ Type      │ Amount   │ Status                 │       │
+│  ├────────────┼───────────┼──────────┼────────────────────────┤       │
+│  │ No transactions yet                                        │       │
+│  └────────────────────────────────────────────────────────────┘       │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+🎨 Actions Dropdown (3-dot menu)
+text
+     ⋮
+┌──────────────┐
+│ 👁️ View Details│
+│ ✏️ Edit        │
+│ 💳 Add Credits │
+│ 🔑 View Licenses│
+│ 👤 View Users  │
+│ 📧 Send Email  │
+│ 📊 View Stats  │
+│ ────────────── │
+│ 🔒 Suspend     │
+│ 🗑 Delete      │
+└──────────────┘
+📊 Reseller Stats Page (Per Reseller)
+text
+┌─ partner-alpha Analytics ─────────────────────────────────────┐
+│                                                                │
+│  [Period: This Month ▼]                                       │
+│                                                                │
+│  ┌─────────────────────────────┐ ┌──────────────────────────┐ │
+│  │ 📈 License Sales Over Time   │ │ 🎯 Conversion Rate       │ │
+│  │          .                   │ │                          │ │
+│  │  2┤     ╱ ╲                 │ │     ╭──────────╮        │ │
+│  │  1┤   ╱    ╲               │ │  0  │ 0        │        │ │
+│  │  0└──╯      ╰──            │ │     │ sales    │        │ │
+│  │    W1  W2  W3  W4          │ │     ╰──────────╯        │ │
+│  └─────────────────────────────┘ └──────────────────────────┘ │
+│                                                                │
+│  ┌─────────────────────────────┐ ┌──────────────────────────┐ │
+│  │ 🥧 Plans Sold               │ │ 📋 Recent Transactions    │ │
+│  │                             │ │                          │ │
+│  │  Free:  0 (0%)             │ │ No transactions yet     │ │
+│  │  Pro:   0 (0%)             │ │                          │ │
+│  │  Ent:   0 (0%)             │ │                          │ │
+│  └─────────────────────────────┘ └──────────────────────────┘ │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+🔔 Add These Features
+1. Credit Management
+text
+┌─ Add Credits: partner-alpha ──────────────────────┐
+│                                                   │
+│  Current Balance: 100 credits                     │
+│  Add: [50____] credits                           │
+│                                                   │
+│  Reason: [Monthly allocation______]              │
+│                                                   │
+│  [Add Credits]                                    │
+│                                                   │
+│  ── Credit History ──                            │
+│  📅 24 Apr 2026  +100  Initial allocation        │
+│                                                   │
+└───────────────────────────────────────────────────┘
+2. Commission Payout System
+text
+┌─ Commission Payout ───────────────────────────────┐
+│                                                   │
+│  Unpaid Commission: $0                            │
+│  Lifetime Earned: $0                              │
+│                                                   │
+│  [Request Payout]  [Payout History]               │
+│                                                   │
+│  Payment Method: [Not Set]                        │
+│  Minimum Payout: $50                              │
+│                                                   │
+└───────────────────────────────────────────────────┘
+3. Reseller Portal Link
+text
+┌─ Reseller Portal ─────────────────────────────────┐
+│                                                   │
+│  Share this link with partner-alpha:              │
+│                                                   │
+│  ┌───────────────────────────────────────┐       │
+│  │ https://yourapp.com/reseller/login    │  📋   │
+│  └───────────────────────────────────────┘       │
+│                                                   │
+│  Their portal includes:                           │
+│  ✅ Create & manage users                         │
+│  ✅ Generate license keys                         │
+│  ✅ View own analytics                            │
+│  ✅ Track commission                              │
+│                                                   │
+│  [Preview Portal as partner-alpha]                │
+│                                                   │
+└───────────────────────────────────────────────────┘
+📋 Enhanced Table Features
+Column	Current	Premium
+Username	partner-alpha	partner-alpha 📧 email@example.com
+Credits	100	100 (Progress bar: ████░░ 0% used)
+Users Created	0	0 users · 0 active licenses
+Status	Active	🟢 Active (with last active: 2h ago)
+Revenue	❌ Missing	💰 $0 earned this month
+Commission	❌ Missing	20% rate
+Actions	❌ Missing	⋮ dropdown menu
+🎯 Priority Implementation
+Step	Feature	Impact
+🔴 1	Redesign table with more columns	High
+🟡 2	Add Reseller form improvements	High
+🟡 3	Stats cards at top	Medium
+🟡 4	Expandable row with details	Medium
+🟢 5	Credit management system	Low
+🟢 6	Commission tracking	Low
+
+
+
+
+
+
+
+🎯 Full Credentials Page Layout
+text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  API Credentials                                       [+ Generate New Key]   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ⚠️ Security Notice                                                          │
+│  ┌────────────────────────────────────────────────────────────────────────┐  │
+│  │ 🔒 Keep your API keys secure. Never share them in public repositories, │  │
+│  │    client-side code, or screenshots. Rotate keys every 90 days.        │  │
+│  └────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐        │
+│  │ 🔑           │ │ 🟢           │ │ ⏰           │ │ ⚡           │        │
+│  │ Total        │ │ Active       │ │ Expiring     │ │ Last Used    │        │
+│  │ API Keys     │ │ Keys         │ │ Soon         │ │              │        │
+│  │              │ │              │ │              │ │              │        │
+│  │ 1            │ │ 1            │ │ 0            │ │ 24 Apr 2026  │        │
+│  └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘        │
+│                                                                              │
+│  ┌─ API Keys Table ──────────────────────────────────────────────────────┐   │
+│  │                                                                        │   │
+│  │  [🔍 Search by app name...]  [Status: All ▼]  [Sort: Newest ▼]        │   │
+│  │                                                                        │   │
+│  │  ┌─────────────────────────────────────────────────────────────────┐   │   │
+│  │  │ App │ API Key       │ Created  │ Last Used │ Expires │ Status  │   │   │
+│  │  ├─────┼───────────────┼──────────┼───────────┼─────────┼─────────┤   │   │
+│  │  │ 📱  │ wa_live_***** │ Apr 23   │ Apr 23    │ Never   │ 🟢     │   │   │
+│  │  │ d…b │               │ 2026     │ 2026      │         │ Active  │   │   │
+│  │  │     │               │          │           │         │    ⋮    │   │   │
+│  │  └─────┴───────────────┴──────────┴───────────┴─────────┴─────────┘   │   │
+│  │                                                                        │   │
+│  └────────────────────────────────────────────────────────────────────────┘   │
+│                                                                              │
+│  ┌─ API Usage Overview (Last 30 Days) ────────────────────────────────────┐  │
+│  │                                                                         │  │
+│  │  ┌─────────────────────────────────────────┐ ┌────────────────────────┐ │  │
+│  │  │ 📈 Request Volume                        │ │ 🥧 Requests by App    │ │  │
+│  │  │          .                              │ │                        │ │  │
+│  │  │  5┤     ╱╲                              │ │ dashboard-server: 100%│ │  │
+│  │  │  3┤   ╱   ╲                             │ │                        │ │  │
+│  │  │  1┤ ╱      ╲___                         │ │                        │ │  │
+│  │  │  0└╯         ╲                          │ │                        │ │  │
+│  │  │    W1  W2  W3  W4                       │ └────────────────────────┘ │  │
+│  │  └─────────────────────────────────────────┘                            │  │
+│  │                                                                         │  │
+│  └─────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+🔑 Generate New API Key - Premium Modal
+text
+┌─ Generate New API Key ──────────────────────────────────────┐
+│                                                             │
+│  ── Configuration ──                                       │
+│                                                             │
+│  Application:   [Select App ▼]                             │
+│                 dashboard-server                            │
+│                                                             │
+│  Key Name:      [Production Key__________]                 │
+│                 For your reference only                     │
+│                                                             │
+│  ── Permissions (Scopes) ──                                │
+│                                                             │
+│  ☑ Read licenses                                           │
+│  ☑ Create licenses                                         │
+│  ☑ Validate licenses                                       │
+│  ☐ Delete licenses                                         │
+│  ☑ Read users                                              │
+│  ☐ Manage users                                            │
+│  ☐ Full admin access                                       │
+│                                                             │
+│  ── Security ──                                            │
+│                                                             │
+│  Expiration:    ○ Never                                    │
+│                 ○ 90 Days                                  │
+│                 ○ Custom: [30] Days                        │
+│                                                             │
+│  IP Restriction:☐ Restrict to specific IPs                 │
+│                 [192.168.1.1______]  [+ Add IP]            │
+│                                                             │
+│  Rate Limit:    [1000] requests per hour                   │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │              [Generate API Key]                      │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+🔒 Key Reveal Modal (Secure)
+text
+┌─ API Key Created Successfully ──────────────────────────────┐
+│                                                             │
+│  ⚠️ IMPORTANT: Copy your key now.                          │
+│  You won't be able to see it again!                        │
+│                                                             │
+│  ── API Key ──                                             │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ wa_live_8f7a2b3c4d5e6f7a8b9c0d1e2f3a4b5c          │ 📋 │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  Type: Live Key    Scope: Read/Write    Expires: Never     │
+│                                                             │
+│  ── Quick Setup ──                                         │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ curl -H "Authorization: Bearer wa_live_..." \       │ 📋 │
+│  │      https://api.yourapp.com/v1/licenses            │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  [Copy Key]  [Download .env]  [I've Saved It]              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+📋 Key Details (Click to Expand)
+text
+┌─ Key Details: wa_live_***** ──────────────────────────────────┐
+│                                                               │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐          │
+│  │ 📊 245       │ │ ⚡ 98%       │ │ ⏱️ 120ms     │          │
+│  │ Requests     │ │ Success Rate │ │ Avg Latency  │          │
+│  │ (This Month) │ │              │ │              │          │
+│  └──────────────┘ └──────────────┘ └──────────────┘          │
+│                                                               │
+│  ── Key Information ──                                       │
+│  App:       dashboard-server                                 │
+│  Key Name:  Production Key                                   │
+│  Created:   23 Apr 2026                                      │
+│  Last Used: 23 Apr 2026 · 2 hours ago                       │
+│  Expires:   Never                                            │
+│  Scopes:    read:licenses, create:licenses, read:users       │
+│  IP Lock:   Not enabled                                      │
+│  Rate Limit: 1000 req/hour                                   │
+│                                                               │
+│  ── Recent Usage ──                                          │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ Time              │ Endpoint        │ Status         │   │
+│  ├───────────────────┼─────────────────┼────────────────┤   │
+│  │ 23 Apr 14:30 UTC  │ /v1/licenses    │ 200 ✅         │   │
+│  │ 23 Apr 14:25 UTC  │ /v1/users       │ 200 ✅         │   │
+│  │ 23 Apr 13:00 UTC  │ /v1/validate    │ 200 ✅         │   │
+│  └──────────────────────────────────────────────────────┘   │
+│  [View Full Logs →]                                          │
+│                                                               │
+│  ── Actions ──                                               │
+│  [Regenerate Key] [Change Scopes] [Revoke Key] [Export Logs]│
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
+🎨 Actions Dropdown
+text
+     ⋮
+┌──────────────┐
+│ 👁️ View Details│
+│ 📋 Copy Key   │
+│ ✏️ Edit Scopes │
+│ 🔄 Regenerate │
+│ 📊 View Logs  │
+│ ────────────── │
+│ 🚫 Revoke     │
+│ 🗑 Delete     │
+└──────────────┘
+⚠️ Key Health Indicators
+text
+┌─ Key Health ──────────────────────────────────────────────┐
+│                                                           │
+│  dashboard-server (wa_live_*****)                         │
+│                                                           │
+│  🟢 Key Active                                            │
+│  🟢 Not expired                                           │
+│  🟡 No IP restriction (less secure)                       │
+│  🟢 Under rate limit (0/1000 req)                         │
+│  🔴 Not rotated in 365+ days                              │
+│                                                           │
+│  Overall Score: 75/100 - Needs IP restriction             │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
+📱 Empty State Design
+text
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│                    🔑                                │
+│            No API Keys Yet                           │
+│                                                      │
+│       Generate your first API key to                 │
+│       integrate with your application.               │
+│                                                      │
+│          [Generate First API Key]                    │
+│                                                      │
+│       📖 View API Documentation →                    │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+🔐 Security Banner (Top)
+text
+┌──────────────────────────────────────────────────────────────────────────┐
+│ 🔐 Security Recommendations                                              │
+│                                                                          │
+│ ⚠️ 1 key hasn't been rotated in 30+ days                                │
+│ 💡 Enable IP whitelisting for production keys                            │
+│ 💡 Set expiration dates for temporary keys                               │
+│                                                                          │
+│ [View All Recommendations]   [Dismiss]                                   │
+└──────────────────────────────────────────────────────────────────────────┘
+📊 Additional Features to Add
+Feature	Description
+Key Rotation	Auto-remind to rotate keys every 90 days
+Usage Graphs	Per-key request volume charts
+Error Tracking	Show 4xx/5xx errors by key
+Webhook Logs	If webhooks are configured
+SDK Download	Quick setup code snippets
+API Docs Link	Link to full API documentation
+🎯 Priority Implementation
+Step	Feature	Impact
+🔴 1	Redesign table with more info	High
+🔴 2	Secure key reveal modal	High
+🟡 3	Stats cards at top	Medium
+🟡 4	Key health indicators	Medium
+🟡 5	Usage graphs per key	Medium
+🟢 6	IP restriction & scopes	Advanced
+
+
+
+
+
+
+🎯 Full Activity Logs Page Layout
+text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  Activity Logs                                      [Export Logs] [Settings]  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐        │
+│  │ 📋           │ │ ⚠️           │ │ 🔴           │ │ ⚡           │        │
+│  │ Total        │ │ Warnings     │ │ Errors       │ │ Events      │        │
+│  │ Logs         │ │              │ │              │ │ Today        │        │
+│  │              │ │              │ │              │ │              │        │
+│  │ 6            │ │ 0            │ │ 0            │ │ 2            │        │
+│  │ All time     │ │ ⬇ 0%        │ │ ⬇ 0%        │ │ ⬆ From 0    │        │
+│  └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘        │
+│                                                                              │
+│  ┌─ Filters ──────────────────────────────────────────────────────────────┐  │
+│  │                                                                         │  │
+│  │  [🔍 Search logs...]  [Category: All ▼]  [Severity: All ▼]             │  │
+│  │  [Date Range: 📅 Last 7 Days ▼]  [User: All Users ▼]                   │  │
+│  │                                                                         │  │
+│  │  [Clear Filters]  [Save Filter]  [Export Current View]                 │  │
+│  │                                                                         │  │
+│  └─────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+│  ┌─ Activity Timeline ────────────────────────────────────────────────────┐  │
+│  │                                                                         │  │
+│  │  ── Today: 24 Apr 2026 ──                                              │  │
+│  │                                                                         │  │
+│  │  ┌──────────────────────────────────────────────────────────────────┐   │  │
+│  │  │ 🟢 19:11   Admin    Application created: atik (app_b2cc6b92)    │   │  │
+│  │  │           📱 Application  ·  ⬆ Created  ·  ID: app_b2cc6b92     │   │  │
+│  │  ├──────────────────────────────────────────────────────────────────┤   │  │
+│  │  │ 🟢 18:57   Admin    Application created: atik (app_f1940adb)    │   │  │
+│  │  │           📱 Application  ·  ⬆ Created  ·  ID: app_f1940adb     │   │  │
+│  │  ├──────────────────────────────────────────────────────────────────┤   │  │
+│  │  │ 🔵 18:57   Login    OAuth login via Google                      │   │  │
+│  │  │           👤 MD Atikur Rohoman  ·  🌐 IP: 103.xxx.xxx.xxx       │   │  │
+│  │  │           🔍 Browser: Chrome  ·  📍 Bangladesh                  │   │  │
+│  │  ├──────────────────────────────────────────────────────────────────┤   │  │
+│  │  │ 🟢 18:56   System   Backend initialized successfully            │   │  │
+│  │  │           ⚙️ Server restart  ·  Version: 1.0.0                  │   │  │
+│  │  ├──────────────────────────────────────────────────────────────────┤   │  │
+│  │  │ 🔵 18:27   Login    OAuth login via Google                      │   │  │
+│  │  │           👤 MD Atikur Rohoman  ·  🌐 IP: 103.xxx.xxx.xxx       │   │  │
+│  │  ├──────────────────────────────────────────────────────────────────┤   │  │
+│  │  │ 🟢 18:26   System   Backend initialized successfully            │   │  │
+│  │  │           ⚙️ Server restart  ·  Version: 1.0.0                  │   │  │
+│  │  └──────────────────────────────────────────────────────────────────┘   │  │
+│  │                                                                         │  │
+│  │  ── Older ──                                                            │  │
+│  │                                                                         │  │
+│  │  No older logs to show                                                 │  │
+│  │                                                                         │  │
+│  └─────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+│  ┌─ Severity Distribution ────────────────────────────────────────────────┐  │
+│  │                                                                         │  │
+│  │  INFO:   ████████████████████████ 6 (100%)                             │  │
+│  │  WARN:   ░░░░░░░░░░░░░░░░░░░░░░░░ 0 (0%)                               │  │
+│  │  ERROR:  ░░░░░░░░░░░░░░░░░░░░░░░░ 0 (0%)                               │  │
+│  │  DEBUG:  ░░░░░░░░░░░░░░░░░░░░░░░░ 0 (0%)                               │  │
+│  │                                                                         │  │
+│  └─────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+🎨 Color-Coded Severity Badges
+css
+🔵 DEBUG    → Gray badge     (System diagnostic)
+🟢 INFO     → Green badge    (Normal operations)
+🟡 WARNING  → Yellow badge   (Needs attention)
+🟠 ALERT    → Orange badge   (Important)
+🔴 ERROR    → Red badge      (Failure)
+⚫ CRITICAL → Black badge    (System down)
+🔍 Category Icons Mapping
+Category	Icon	Color
+Admin	⚙️	Purple
+Login	🔐	Blue
+System	🖥️	Gray
+License	🔑	Green
+User	👤	Cyan
+Payment	💳	Gold
+Security	🛡️	Red
+API	🔗	Teal
+Reseller	🤝	Orange
+🔎 Log Detail Modal (Click to Expand)
+text
+┌─ Log Detail ──────────────────────────────────────────────────────┐
+│                                                                    │
+│  ⚙️ Admin · INFO · app_created                                   │
+│                                                                    │
+│  ── Summary ──                                                    │
+│  Application created: atik (app_b2cc6b92)                         │
+│                                                                    │
+│  ── Details ──                                                    │
+│  ┌──────────────────────────────────────────────────────────┐    │
+│  │ {                                                         │    │
+│  │   "event": "application.created",                        │    │
+│  │   "category": "Admin",                                   │    │
+│  │   "severity": "INFO",                                    │    │
+│  │   "application": {                                       │    │
+│  │     "name": "atik",                                      │    │
+│  │     "id": "app_b2cc6b92",                               │    │
+│  │     "version": "1.0.0"                                   │    │
+│  │   },                                                     │    │
+│  │   "actor": {                                             │    │
+│  │     "name": "MD Atikur Rohoman",                         │    │
+│  │     "email": "atikur@example.com",                       │    │
+│  │     "ip": "103.xxx.xxx.xxx"                              │    │
+│  │   },                                                     │    │
+│  │   "timestamp": "2026-04-23T19:11:01.621523+00:00"       │    │
+│  │ }                                                        │    │
+│  └──────────────────────────────────────────────────────────┘    │
+│                                                                    │
+│  [Copy JSON]  [Copy as cURL]  [Report Issue]                     │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+🛡️ Real-Time Filtering
+text
+┌─ Advanced Filters ────────────────────────────────────────────────┐
+│                                                                    │
+│  ── Date Range ──                                                 │
+│  ○ Today          ○ Last 7 Days    ○ Last 30 Days                 │
+│  ○ Custom Range:  [23 Apr 2026] - [24 Apr 2026]                   │
+│                                                                    │
+│  ── Severity ──                                                   │
+│  ☑ INFO    ☑ WARNING    ☑ ERROR    ☑ CRITICAL                    │
+│                                                                    │
+│  ── Categories ──                                                 │
+│  ☑ Admin    ☑ Login    ☑ System    ☑ License                     │
+│  ☑ User     ☑ Payment  ☑ Security  ☑ API                         │
+│                                                                    │
+│  ── Users ──                                                      │
+│  ☑ MD Atikur Rohoman    ☑ System    ☐ Guest                      │
+│                                                                    │
+│  ── Actions ──                                                    │
+│  [Apply Filters]  [Reset]  [Save as View]                        │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+📊 Activity Stats Section
+text
+┌─ Activity Overview ────────────────────────────────────────────────┐
+│                                                                    │
+│  ┌──────────────────────────┐ ┌──────────────────────────┐        │
+│  │ 📈 Events Over Time       │ │ 🥧 Events by Category    │        │
+│  │          .                │ │                          │        │
+│  │  3┤     ╱╲               │ │  Admin:   ████ 2 (33%)  │        │
+│  │  2┤ ╱──╱  ╲──╮           │ │  Login:   ████ 2 (33%)  │        │
+│  │  1┤╱        ╲╰──         │ │  System:  ████ 2 (33%)  │        │
+│  │  0└─────────────────      │ │                          │        │
+│  │    18:00 19:00 20:00     │ └──────────────────────────┘        │
+│  └──────────────────────────┘                                     │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+⚙️ Log Settings
+text
+┌─ Log Settings ────────────────────────────────────────────────────┐
+│                                                                    │
+│  ── Retention ──                                                  │
+│  Keep logs for: [90] Days                                         │
+│  Current size: 6 logs (2.4 KB)                                    │
+│                                                                    │
+│  ── What to Log ──                                                │
+│  ☑ Admin actions    ☑ User logins      ☑ License events           │
+│  ☑ System events    ☑ API calls        ☐ Debug information        │
+│  ☑ Failed attempts  ☑ Security events  ☐ Database queries         │
+│                                                                    │
+│  ── Notifications ──                                              │
+│  ☐ Email on ERROR     ☐ Email on CRITICAL                         │
+│  ☑ In-app notification on WARNING                                 │
+│                                                                    │
+│  ── Export ──                                                     │
+│  Format: [JSON ▼]    [Export All Logs]                            │
+│  ☑ Schedule daily export at [00:00]                               │
+│                                                                    │
+│  [Save Settings]                                                   │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+🔔 Live Log Toggle
+text
+┌─ Live Logs ───────────────────────────────────────────────────────┐
+│                                                                    │
+│  ● Live  [Pause]  [Clear]                                        │
+│                                                                    │
+│  🟢 19:11:01  Admin    Application created: atik                 │
+│  🔵 19:10:45  Login    User logged in: demo_user                 │
+│  🟢 19:10:30  License  Key validated: A3F7-K9L2                  │
+│                                                                    │
+│  Auto-scroll: ☑                                                   │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+📱 Mobile Responsive Log Card
+text
+┌─────────────────────────────────────────┐
+│ 🟢 Admin · INFO · 23 Apr 19:11         │
+│                                         │
+│ Application created: atik               │
+│ (app_b2cc6b92)                         │
+│                                         │
+│ 👤 MD Atikur Rohoman                    │
+│ 🌐 103.xxx.xxx.xxx                     │
+│                                         │
+│ [Expand Details]  [Copy]               │
+└─────────────────────────────────────────┘
+🎯 Priority Implementation
+Step	Feature	Impact
+🔴 1	Color-coded severity badges	High
+🔴 2	Category icons	High
+🔴 3	Filters & search	High
+🟡 4	Log detail modal (click to expand)	Medium
+🟡 5	Timeline view instead of table	Medium
+🟡 6	Stats & charts	Medium
+🟢 7	Live log streaming	Low
+🟢 8	Export & retention settings	Low
+
+
+
+
+
+
+
+
+
+
+
+🎯 Full Settings Page Layout
+text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  Settings                                                                    │
+│  Manage your account, security, and platform preferences                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌─ Settings Navigation ─────────────────────────────────────────────────┐   │
+│  │  [General]  [Security]  [API & Webhooks]  [Billing]  [Team]  [Logs]   │   │
+│  └────────────────────────────────────────────────────────────────────────┘   │
+│                                                                              │
+│  ┌─ General Settings ──────────────────────────────────────────────────────┐  │
+│  │                                                                          │  │
+│  │  ── Application Profile ──                                              │  │
+│  │                                                                          │  │
+│  │  App Name:        [atik___________________________]                     │  │
+│  │                   Display name for your dashboard                        │  │
+│  │                                                                          │  │
+│  │  Owner ID:        [owner123______________________]                      │  │
+│  │                   Unique identifier for API reference                    │  │
+│  │                                                                          │  │
+│  │  ── Branding ──                                                         │  │
+│  │                                                                          │  │
+│  │  Logo:            ┌──────────┐                                           │  │
+│  │                   │ 🖼️       │  [Upload Logo]                           │  │
+│  │                   │ No logo  │  Recommended: 200x60px, PNG/SVG          │  │
+│  │                   └──────────┘                                           │  │
+│  │                                                                          │  │
+│  │  Favicon:         ┌──┐  [Upload Favicon]                                │  │
+│  │                   │🌐│  32x32px recommended                              │  │
+│  │                   └──┘                                                   │  │
+│  │                                                                          │  │
+│  │  ── Appearance ──                                                       │  │
+│  │                                                                          │  │
+│  │  Theme:           ○ Light    ● Dark    ○ System                         │  │
+│  │                                                                          │  │
+│  │  ┌────────────────────────────────────────────────────────────┐         │  │
+│  │  │ [Preview: Dark Theme]                                      │         │  │
+│  │  │ ┌──────────┐ ┌──────────┐ ┌──────────┐                    │         │  │
+│  │  │ │ Card 1   │ │ Card 2   │ │ Card 3   │                    │         │  │
+│  │  │ └──────────┘ └──────────┘ └──────────┘                    │         │  │
+│  │  └────────────────────────────────────────────────────────────┘         │  │
+│  │                                                                          │  │
+│  │  Accent Color:    [🟣 Purple ▼]                                         │  │
+│  │                   🟣 Purple  🔵 Blue  🟢 Green  🟠 Orange  🔴 Red       │  │
+│  │                                                                          │  │
+│  │  ── Localization ──                                                     │  │
+│  │                                                                          │  │
+│  │  Timezone:        [Asia/Dhaka (GMT+6) ▼]                                │  │
+│  │  Date Format:     [DD/MM/YYYY ▼]                                        │  │
+│  │  Language:        [English ▼]                                           │  │
+│  │                                                                          │  │
+│  │  ┌────────────────────────────────────────────────────────────────┐     │  │
+│  │  │                    [Save Changes]                               │     │  │
+│  │  └────────────────────────────────────────────────────────────────┘     │  │
+│  │                                                                          │  │
+│  └──────────────────────────────────────────────────────────────────────────┘  │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+🔐 Security Tab
+text
+┌─ Security Settings ───────────────────────────────────────────────────────┐
+│                                                                            │
+│  ── Authentication ──                                                     │
+│                                                                            │
+│  Auth Mode:        [Cookie Session ▼]                                     │
+│                    ○ Cookie Session    ○ JWT Token    ○ API Key Only       │
+│                                                                            │
+│  ── Session Settings ──                                                   │
+│                                                                            │
+│  Session Timeout:  [24] Hours                                              │
+│  Max Sessions:     [5] devices                                             │
+│  ☑ Invalidate all sessions on password change                             │
+│                                                                            │
+│  ── Password Policy ──                                                    │
+│                                                                            │
+│  Minimum Length:   [8] characters                                          │
+│  ☑ Require uppercase    ☑ Require numbers                                 │
+│  ☑ Require symbols      ☐ Prevent common passwords                        │
+│                                                                            │
+│  ── Two-Factor Authentication (2FA) ──                                    │
+│                                                                            │
+│  Status:            🔴 Not Enabled                                        │
+│  Method:            [Authenticator App ▼]                                  │
+│                     [Enable 2FA]                                           │
+│                                                                            │
+│  ── IP Whitelist ──                                                       │
+│                                                                            │
+│  ☐ Restrict admin access to specific IPs                                  │
+│  [192.168.1.1_______________]  [+ Add IP]                                 │
+│  Current IP: 103.xxx.xxx.xxx  [Add Current IP]                            │
+│                                                                            │
+│  ── Login History ──                                                      │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ Date       │ IP              │ Device        │ Status            │     │
+│  ├────────────┼─────────────────┼───────────────┼───────────────────┤     │
+│  │ 24 Apr     │ 103.xxx.xxx.xxx │ Chrome/Win    │ ✅ Current        │     │
+│  │ 23 Apr     │ 103.xxx.xxx.xxx │ Chrome/Win    │ ✅ Success        │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│  [View All Sessions]  [Sign Out All Devices]                                │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │                    [Save Security Settings]                       │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+🔗 API & Webhooks Tab
+text
+┌─ API & Webhooks Settings ─────────────────────────────────────────────────┐
+│                                                                            │
+│  ── API Configuration ──                                                  │
+│                                                                            │
+│  API Base URL:     [https://api.yourapp.com/v1___________________]        │
+│  API Version:      [v1 ▼]                                                 │
+│  Rate Limit:       [1000] requests/hour                                   │
+│                                                                            │
+│  ── Webhook Endpoints ──                                                  │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ Event               │ URL                    │ Status  │ Actions │     │
+│  ├─────────────────────┼────────────────────────┼─────────┼─────────┤     │
+│  │ No webhooks yet     │                        │         │         │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+│  [+ Add Webhook]                                                           │
+│                                                                            │
+│  Webhook Secret:   [________________________________]  🎲 Generate        │
+│                    Used to verify webhook signatures                        │
+│                                                                            │
+│  ── Webhook Events ──                                                     │
+│  ☑ license.created    ☑ license.validated    ☑ license.expired            │
+│  ☑ user.created       ☑ user.login           ☐ user.deleted               │
+│  ☐ payment.success    ☐ payment.failed       ☐ subscription.renewed       │
+│                                                                            │
+│  [Test Webhook]  [View Delivery Logs]                                      │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │                    [Save API Settings]                            │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+💳 Billing Tab (Future)
+text
+┌─ Billing Settings ────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ── Current Plan ──                                                       │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │  Plan: FREE                                            [Upgrade] │     │
+│  │  ──────────────────────────────────────────────────────────────  │     │
+│  │  ✅ 1 Application         ✅ 100 Licenses                        │     │
+│  │  ✅ Basic Analytics       ❌ Custom Branding                     │     │
+│  │  ❌ Reseller System       ❌ Priority Support                    │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+│  ── Payment Method ──                                                     │
+│  No payment method added                                                  │
+│  [+ Add Payment Method]                                                    │
+│                                                                            │
+│  ── Billing History ──                                                    │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ Date       │ Description      │ Amount    │ Status              │     │
+│  ├────────────┼──────────────────┼───────────┼─────────────────────┤     │
+│  │ No transactions yet                                               │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│  [Download Invoice]                                                        │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+👥 Team Tab (Future)
+text
+┌─ Team Settings ───────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ── Team Members ──                                                       │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ Member              │ Role      │ Status   │ Last Active │       │     │
+│  ├─────────────────────┼───────────┼──────────┼─────────────┤       │     │
+│  │ 👤 MD Atikur Rohoman│ Owner     │ 🟢 Active│ Now         │ ⋮    │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+│  [+ Invite Team Member]                                                    │
+│                                                                            │
+│  ── Roles & Permissions ──                                                │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────┐         │
+│  │ Role     │ Manage Apps │ Manage Users │ View Analytics │ ... │         │
+│  ├──────────┼─────────────┼──────────────┼────────────────┼─────┤         │
+│  │ Owner    │ ✅          │ ✅           │ ✅             │ ✅  │         │
+│  │ Admin    │ ✅          │ ✅           │ ✅             │ ❌  │         │
+│  │ Viewer   │ ❌          │ ❌           │ ✅             │ ❌  │         │
+│  └──────────────────────────────────────────────────────────────┘         │
+│  [Manage Roles]                                                            │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+⚠️ Danger Zone (Redesigned)
+text
+┌─ Danger Zone ─────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ⚠️ These actions are irreversible. Please proceed with caution.          │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ 🔄 Reset All Data                                                │     │
+│  │                                                                  │     │
+│  │ Reset all applications, licenses, and users.                     │     │
+│  │ This will not delete your account.                               │     │
+│  │                                                                  │     │
+│  │ [Reset All Data]  ← Requires confirmation                       │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ 📤 Export Account Data                                           │     │
+│  │                                                                  │     │
+│  │ Download all your data including users and licenses.             │     │
+│  │ Format: [JSON ▼]                                                │     │
+│  │                                                                  │     │
+│  │ [Export Data]                                                    │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────┐     │
+│  │ 🗑️ Delete Account                                                │     │
+│  │                                                                  │     │
+│  │ Permanently delete your account and all associated data.         │     │
+│  │ This action cannot be undone.                                    │     │
+│  │                                                                  │     │
+│  │ ⚠️ Type "DELETE" to confirm: [_______________]                   │     │
+│  │                                                                  │     │
+│  │ [Permanently Delete Account]  ← Grayed out until confirmed       │     │
+│  └──────────────────────────────────────────────────────────────────┘     │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+📧 Notifications Tab
+text
+┌─ Notification Settings ───────────────────────────────────────────────────┐
+│                                                                            │
+│  ── Email Notifications ──                                                │
+│                                                                            │
+│  ☑ License about to expire (7 days before)                                │
+│  ☑ New user registration                                                  │
+│  ☑ Failed login attempts                                                  │
+│  ☐ Weekly analytics report                                                │
+│  ☐ Product updates & tips                                                 │
+│                                                                            │
+│  ── In-App Notifications ──                                               │
+│                                                                            │
+│  ☑ System alerts          ☑ Security alerts                               │
+│  ☑ License events         ☐ Marketing                                     │
+│                                                                            │
+│  ── Notification Channels ──                                              │
+│                                                                            │
+│  Email:    atikur@example.com  [Change]                                   │
+│  Slack:    Not connected       [Connect]                                  │
+│  Discord:  Not connected       [Connect]                                  │
+│  Telegram: Not connected       [Connect]                                  │
+│                                                                            │
+│  [Save Preferences]                                                        │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+📋 Settings Sidebar Navigation
+text
+┌──────────────────────┐
+│ ⚙️ General            │  ← Current tab highlighted
+│ 🔐 Security           │
+│ 🔗 API & Webhooks     │
+│ 💳 Billing            │
+│ 👥 Team               │
+│ 🔔 Notifications      │
+│ 📋 Audit Log          │
+│ ───────────────────── │
+│ ⚠️ Danger Zone        │
+└──────────────────────┘
+🎯 Priority Implementation
+Step	Tab	Impact
+🔴 1	General - Theme, branding, timezone	High
+🔴 2	Security - 2FA, sessions, password	High
+🔴 3	Danger Zone - Confirmation flow	High
+🟡 4	API & Webhooks	Medium
+🟡 5	Notifications	Medium
+🟢 6	Billing & Team	Future
+
+
