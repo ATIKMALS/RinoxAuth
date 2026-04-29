@@ -18,6 +18,7 @@ import {
 import { UsersClientWrapper } from "./client-wrapper";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
+import { api } from "@/services/api";
 
 // ============================================
 // ANIMATED STAT CARD COMPONENT
@@ -67,10 +68,8 @@ async function getApps(createdBy?: string) {
 
 async function getUsers() {
   try {
-    const res = await fetch(`${env.BACKEND_BASE_URL}/api/users`, { cache: "no-store" });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return data.data || (Array.isArray(data) ? data : []);
+    const data = await api.users.list({});
+    return Array.isArray(data) ? data : [];
   } catch { return []; }
 }
 
@@ -109,7 +108,7 @@ export default async function UsersPage() {
       </div>
 
       {/* Stats */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
         <StatCard title="Total Users" value={users.length.toString()} subValue="All registered users" icon={UsersIcon} color="indigo" trend="up" change="12%" />
         <StatCard title="Active Users" value={activeUsers.toString()} subValue={`${retentionRate}% retention rate`} icon={UserCheck} color="emerald" trend="up" change="8%" />
         <StatCard title="Expired" value={expiredUsers.toString()} subValue="Require renewal" icon={UserX} color="rose" trend="down" change="3%" />
@@ -118,21 +117,21 @@ export default async function UsersPage() {
 
       {/* Filters */}
       <Card className="p-4">
-        <div className="flex flex-col sm:flex-row gap-3">
-          <div className="relative flex-1">
+        <div className="flex flex-col lg:flex-row gap-3">
+          <div className="relative flex-1 w-full">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-500" />
             <input placeholder="Search users by name or email..." className="w-full rounded-xl border border-zinc-700/50 bg-zinc-800/50 pl-10 pr-4 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 focus:outline-none transition-all" />
           </div>
-          <div className="flex gap-2">
-            <select className="rounded-xl border border-zinc-700/50 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-300 cursor-pointer">
+          <div className="flex flex-wrap gap-2 lg:flex-nowrap">
+            <select className="rounded-xl border border-zinc-700/50 bg-zinc-800/50 px-3 py-2.5 text-sm text-zinc-300 cursor-pointer min-w-[140px]">
               <option value="">All Applications</option>
               {apps.map((app: any) => <option key={app.id} value={app.id}>{app.name}</option>)}
             </select>
-            <select className="rounded-xl border border-zinc-700/50 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-300 cursor-pointer">
+            <select className="rounded-xl border border-zinc-700/50 bg-zinc-800/50 px-3 py-2.5 text-sm text-zinc-300 cursor-pointer min-w-[100px]">
               <option>All Plans</option>
               <option>Free</option><option>Starter</option><option>Professional</option><option>Enterprise</option>
             </select>
-            <select className="rounded-xl border border-zinc-700/50 bg-zinc-800/50 px-4 py-2.5 text-sm text-zinc-300 cursor-pointer">
+            <select className="rounded-xl border border-zinc-700/50 bg-zinc-800/50 px-3 py-2.5 text-sm text-zinc-300 cursor-pointer min-w-[100px]">
               <option>All Status</option>
               <option>Active</option><option>Inactive</option><option>Banned</option>
             </select>
